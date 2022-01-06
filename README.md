@@ -2,7 +2,7 @@
 ### 本项目源自 mirror-config-china，感谢原作者
 ===========
 
-[![NPM version](https://img.shields.io/npm/v/mirror-config-china.svg?style=flat-square)](https://www.npmjs.com/package/npmmirror-config-china)
+[![NPM version](https://img.shields.io/npm/v/npmmirror-config-china.svg?style=flat-square)](https://www.npmjs.com/package/npmmirror-config-china)
 
 
 为中国内地的Node.js开发者准备的镜像配置，大大提高node模块安装速度。
