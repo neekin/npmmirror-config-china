@@ -1,5 +1,5 @@
 {
-  "author": "NeeKin",
+  "author": "neekin",
   "bin": {
     "npmmirror-config-china": "lib/cli.js"
   },
