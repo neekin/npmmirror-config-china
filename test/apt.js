@@ -101,7 +101,7 @@ DISTRIB_DESCRIPTION="Ubuntu 16.04.4 LTS"
 		assert.strictEqual(
 			mockFs['/etc/apt/sources.list'].trim(),
 			`
-# Created by mirror-config-china
+# Created by npmmirror-config-china
 # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
 deb http://mirror.main.mock/ubuntu/ mock main restricted universe multiverse
 # deb-src http://mirror.main.mock/ubuntu/ mock main restricted universe multiverse
@@ -114,7 +114,7 @@ deb http://mirror.main.mock/ubuntu/ mock-security main restricted universe multi
 # 预发布软件源，不建议启用
 # deb http://mirror.main.mock/ubuntu/ mock-proposed main restricted universe multiverse
 # deb-src http://mirror.main.mock/ubuntu/ mock-proposed main restricted universe multiverse
-# End of mirror-config-china
+# End of npmmirror-config-china
 			`.trim()
 		);
 	});
@@ -136,7 +136,7 @@ DISTRIB_DESCRIPTION="Ubuntu 16.04.4 LTS"
 		assert.strictEqual(
 			mockFs['/etc/apt/sources.list'].trim(),
 			`
-# Created by mirror-config-china
+# Created by npmmirror-config-china
 # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
 deb http://mirror.main.mock/ubuntu/ mock main restricted universe multiverse
 # deb-src http://mirror.main.mock/ubuntu/ mock main restricted universe multiverse
@@ -149,7 +149,7 @@ deb http://mirror.main.mock/ubuntu/ mock-security main restricted universe multi
 # 预发布软件源，不建议启用
 # deb http://mirror.main.mock/ubuntu/ mock-proposed main restricted universe multiverse
 # deb-src http://mirror.main.mock/ubuntu/ mock-proposed main restricted universe multiverse
-# End of mirror-config-china
+# End of npmmirror-config-china
 
 ## old sources
 			`.trim()
@@ -158,7 +158,7 @@ deb http://mirror.main.mock/ubuntu/ mock-security main restricted universe multi
 
 	it('file not modified for debian /etc/apt/sources.list', async () => {
 		const oldContents = `
-# Created by mirror-config-china
+# Created by npmmirror-config-china
 # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
 deb http://mirror.main.mock/debian/ stretch main non-free contrib
 # deb-src http://mirror.main.mock/debian/ stretch main non-free contrib
@@ -168,7 +168,7 @@ deb http://mirror.main.mock/debian/ stretch-updates main non-free contrib
 # deb-src http://mirror.main.mock/debian/ stretch-updates main non-free contrib
 deb http://mirror.main.mock/debian/ stretch-backports main non-free contrib
 # deb-src http://mirror.main.mock/debian/ stretch-backports main non-free contrib
-# End of mirror-config-china
+# End of npmmirror-config-china
 		`.trim() + '\n';
 		mock({
 			'/etc/os-release': `
@@ -209,11 +209,11 @@ DISTRIB_DESCRIPTION="Ubuntu 16.04.4 LTS"
 		assert.strictEqual(
 			mockFs['/etc/apt/sources.list.d/gitlab-runner.list'].trim(),
 			`
-# Created by mirror-config-china
+# Created by npmmirror-config-china
 # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
 deb https://mirrors.gitlab-runner.mock/gitlab-runner/ubuntu/ mock main
 # deb-src https://mirrors.gitlab-runner.mock/gitlab-runner/ubuntu/ mock main
-# End of mirror-config-china
+# End of npmmirror-config-china
 			`.trim()
 		);
 	});
@@ -233,11 +233,11 @@ DISTRIB_DESCRIPTION="Ubuntu 16.04.4 LTS"
 		assert.strictEqual(
 			mockFs['/etc/apt/sources.list.d/nodesource.list'].trim(),
 			`
-# Created by mirror-config-china
+# Created by npmmirror-config-china
 # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
 deb http://mirror.nodesource.mock/deb_10.x/ mock main
 # deb-src http://mirror.nodesource.mock/deb_10.x/ mock main
-# End of mirror-config-china
+# End of npmmirror-config-china
 			`.trim()
 		);
 	});
@@ -261,11 +261,11 @@ deb https://deb.nodesource.com/node_8.x/ mock main
 		assert.strictEqual(
 			mockFs['/etc/apt/sources.list.d/nodesource.list'].trim(),
 			`
-# Created by mirror-config-china
+# Created by npmmirror-config-china
 # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
 deb http://mirror.nodesource.mock/deb_8.x/ mock main
 # deb-src http://mirror.nodesource.mock/deb_8.x/ mock main
-# End of mirror-config-china
+# End of npmmirror-config-china
 
 deb https://deb.nodesource.com/node_8.x/ mock main
 # deb-src https://deb.nodesource.com/node_8.x/ mock main

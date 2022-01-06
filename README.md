@@ -15,7 +15,7 @@
 ## 安装
 
 ```bash
-npm i -g mirror-config-china --registry=https://registry.npmmirror.com
+npm i -g npmmirror-config-china --registry=https://registry.npmmirror.com
 # 查看npm配置
 npm config list
 # 查看环境变量
@@ -90,5 +90,5 @@ github.com/npm/npm/releases 镜像URL
 
 ```
 cd ~/my-project
-mirror-config-china --registry=https://registry.npmmirror.com
+npmmirror-config-china --registry=https://registry.npmmirror.com
 ```
