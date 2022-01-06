@@ -33,7 +33,7 @@
   ],
   "license": "MIT",
   "main": "./index.js",
-  "name": "mirror-config-china",
+  "name": "npmmirror-config-china",
   "nyc": {
     "reporter": [
       "lcov",
