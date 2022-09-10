@@ -91,4 +91,12 @@ github.com/npm/npm/releases 镜像URL
 ```
 cd ~/my-project
 npmmirror-config-china --registry=https://registry.npmmirror.com
+
+```
+
+## Docker构建时使用
+
+```dockerfile
+RUN npm config set registry https://registry.npmmirror.com && npm install --unsafe-perm -g npmmirror-config-china
+RUN npm ci
 ```
